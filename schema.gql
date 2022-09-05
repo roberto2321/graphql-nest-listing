@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todos {
+  id: String!
+  title: String!
+  done: Boolean!
+  created_at: DateTime!
+  updated_at: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  allTodos: [Todos!]!
+  todo(id: String!): Todos!
+}
+
+type Mutation {
+  createTodo(data: inputTodo!): Todos!
+  completeTodo(id: String!): Todos!
+}
+
+input inputTodo {
+  title: String!
+  done: Boolean!
+}
