@@ -1,2 +1,1 @@
-# kapies-back
-NestJS GraphQL TypeORM PostgreSQL
+# NestJS GraphQL TypeORM PostgreSQL
